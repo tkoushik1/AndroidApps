@@ -1,0 +1,12 @@
+his Android application allows a trainer to keep track of batches and classes. Once trainer enters details about batches that are to be started, the application displays the ending date and the entire schedule of classes. It is also possible to add, delete and cancel  classes.
+The following are the major operations in this application.
+
+List of Batches
+Adding new batch
+Updating an existing batch
+Deleting an existing batch
+List of classes
+Adding a new class without or without changing last date
+Cancel a class and add a new class after the last class
+Update an existing class
+Deleting an existing class

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+   
+     
+    <ListView
+        android:id="@+id/listBatches"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+    </ListView>
+
+   
+    <Button
+        android:id="@+id/butAddBatch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="addBatch"
+        android:layout_gravity="center_horizontal"
+        android:text="Add New Batch" />
+    
+</LinearLayout>

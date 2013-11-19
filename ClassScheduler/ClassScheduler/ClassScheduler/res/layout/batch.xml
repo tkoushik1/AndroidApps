@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+  <LinearLayout android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+      <TextView
+          android:id="@+id/textCode"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="code"
+          android:textSize="16sp" />
+          
+      <TextView 
+          android:id="@+id/textCourse"
+          android:gravity="right"
+          android:layout_weight="1"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:textSize="16sp" 
+          android:text="Course"/>           
+  </LinearLayout>    
+  
+      <LinearLayout android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+      <TextView 
+          android:id="@+id/textStartDate"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:textSize="16sp"
+          android:text="stdate" />
+          
+      <TextView 
+          android:id="@+id/textEndDate"
+          android:gravity="right"
+          android:layout_weight="1"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:textSize="16sp" 
+          android:text="EndDate"/>           
+
+  </LinearLayout>
+  
+          
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center">
+
+      <Button
+          android:id="@+id/btnClasses"
+          android:layout_width="wrap_content"
+          android:layout_height="40dp"
+          android:text="List Classes" />
+      
+      
+      
+      <Button
+          android:id="@+id/btnAddClass"
+          android:layout_width="wrap_content"
+          android:layout_height="40dp"
+          android:text="Add Class" />
+      
+      <Button
+          android:id="@+id/btnUpdate"
+          android:layout_width="wrap_content"
+          android:layout_height="40dp"
+          android:text="Update" />
+
+  </LinearLayout>
+      
+  <LinearLayout android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+         <TextView 
+              android:layout_width="match_parent"
+              android:layout_height="3dp"
+              android:background="#ff0000"
+              android:text="" />
+      
+      </LinearLayout>
+      
+</LinearLayout>

@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:stretchColumns="1" >
+
+        <TableRow >
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="Code" />
+
+            <EditText
+                android:id="@+id/editBatchCode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <requestFocus />
+            </EditText>
+        </TableRow>
+
+        <TableRow >
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="Course" />
+
+            <EditText
+                android:id="@+id/editCourse"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+            </EditText>
+        </TableRow>
+
+        <TableRow >
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="Start Date" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/textStartDate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingRight="10dp"
+                    android:text="2012-04-24"
+                    android:textSize="20sp" >
+
+                </TextView>
+            </LinearLayout>
+        </TableRow>
+
+        <TableRow >
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="Start Time" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="showTimePicker"
+                    android:src="@drawable/datepicker" >
+
+                </ImageButton>
+
+                <TextView
+                    android:id="@+id/textStartTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingRight="10dp"
+                    android:text="19:00"
+                    android:textSize="20sp" >
+
+                </TextView>
+            </LinearLayout>
+        </TableRow>
+
+        <TableRow >
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="No. Classes" />
+
+            <TextView
+                android:id="@+id/textClasses"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp" />
+            
+        </TableRow>
+
+        <TableRow >
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:text="Classes Per Week" />
+
+            <TextView
+                android:id="@+id/textClassesPerWeek"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp" />
+            
+        </TableRow>
+
+        <TableRow >
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="Period (Min)" />
+
+            <EditText
+                android:id="@+id/editPeriod"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="number" >
+            </EditText>
+        </TableRow>
+
+        <TableRow >
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="Remarks" />
+
+            <EditText
+                android:id="@+id/editRemarks"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+            </EditText>
+        </TableRow>
+
+        <TableRow>
+           <LinearLayout
+                android:layout_span="2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"  > 
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="updateBatch"
+                android:text="Update" >
+            </Button>
+            
+                <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="deleteBatch"
+                android:text="Delete" >
+            </Button>
+            </LinearLayout>
+        </TableRow>
+    </TableLayout>
+
+</ScrollView>

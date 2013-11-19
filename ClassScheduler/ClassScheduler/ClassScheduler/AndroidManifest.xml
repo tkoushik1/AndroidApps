@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.st.cs"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk android:minSdkVersion="8" />
+
+    <application
+        android:icon="@drawable/ic_launcher"
+        android:label="Class Scheduler" >
+        <activity
+            android:label="List Of Batches"
+            android:name=".ListBatchesActivity" >
+            <intent-filter >
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+        <activity android:label="Add Batch"   android:name=".AddBatchActivity" />
+        <activity android:label="List Classes"   android:name=".ListClassesActivity" />
+        <activity android:label="Add Class"   android:name=".AddClassActivity" />
+        <activity android:label="Update Batch"   android:name=".UpdateBatchActivity" />
+        <activity android:label="Update Class"   android:name=".UpdateClassActivity" />
+    </application>
+
+</manifest>
